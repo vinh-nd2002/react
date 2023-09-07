@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Input from "./components/Input";
+import StopWatch from "./components/StopWatch";
+import TextAreaAutoResize from "./components/TextAreaAutoResize";
+import SignUp from "./components/forms/SignUp";
+import SignUpForm from "./components/forms/SignUpForm";
+import SignUpHook from "./components/forms/SignUpHook";
+import SignUpV2 from "./components/forms/SignUpV2";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <StopWatch /> */}
+      {/* <Input /> */}
+      {/* <TextAreaAutoResize /> */}
+      {/* <SignUp /> */}
+      {/* <SignUpV2 /> */}
+      {/* <SignUpForm /> */}
+      <SignUpHook />
     </div>
   );
 }
