@@ -1,13 +1,32 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #eee;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.custom-radio {
+  width: 10px;
+  height: 10px;
+}
+
+.custom-radio > div {
+  box-shadow: 0 0 0 5px white;
+}
+
+.custom-radio input:checked + div {
+  background-color: blue;
+  box-shadow: 0 0 0 2.5px white, 0 0 0 5px blue;
+}
+
+.custom-checkbox input:checked + div .custom-checkbox-square {
+  background-color: blue;
+}
+
+.custom-checkbox-square {
+  width: 20px;
+  height: 20px;
 }
